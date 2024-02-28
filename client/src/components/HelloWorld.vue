@@ -1,7 +1,7 @@
 <template>
   <div>залупа</div>
   <h1>пупа</h1>
-  <button type="button" name="НОВИНКА" class="NEW">НОВИНКА
+  <button type="button" name="НОВИНКА" class="new">НОВИНКА
   </button>
   <button type="button" name="хит" class="hit">ХИТ</button>
   <button type="button" name="РАСПРОДАЖА" class="sale but">РАСПРОДАЖА</button>
@@ -34,7 +34,7 @@ button {
   font-family:sans-serif;
   border-style: none;
 }
-.NEW { 
+.new { 
 background-color:black ;
 }
 .hit {background-color:#3F71BC ; 
