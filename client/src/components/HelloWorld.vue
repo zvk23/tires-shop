@@ -1,60 +1,53 @@
 <template>
-  <div>залупа</div>
-  <h1>пупа</h1>
-  <button type="button" name="НОВИНКА" class="new">НОВИНКА
-  </button>
-  <button type="button" name="хит" class="hit">ХИТ</button>
-  <button type="button" name="РАСПРОДАЖА" class="sale but">РАСПРОДАЖА</button>
-  <button type="button" name="-20" class="ss">-20%</button>
+  <div class="zagolovok">КНОПКИ</div>
+  <button type="button" class="new but">НОВИНКА</button>
+  <button type="button" class="hit but">ХИТ</button>
+  <button type="button" class="sale but">РАСПРОДАЖА</button>
+  <button type="button" class="ss but">-20%</button>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-})
+    msg: String,
+  },
+});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-} 
-button {
-  font-size: 11px;
-  color:white;
-  text-align:center;
+.zagolovok {
+  font-size:20px;
+  color: #3f71bc;
+  text-align: center;
   font-weight: 500;
-  padding: 10px 10px;
-  margin:10px 10px;
-  font-family:sans-serif;
+}
+.but {
+  font-size: 11px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
   border-style: none;
+  cursor: pointer;
+  transition: all 1s linear;
 }
-.new { 
-background-color:black ;
+.but:hover{
+opacity:0.7;
 }
-.hit {background-color:#3F71BC ; 
-
+.new {
+  background-color: black;
 }
-.sale {background-color:#9747FF ;
+.hit {
+  background-color: #3f71bc;
 }
-.ss {background-color:
-#FF6915;
+.sale {
+  background-color: #9747ff;
 }
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.ss {
+  background-color: #ff6915;
 }
 </style>
