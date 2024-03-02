@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps, withDefaults } from "vue";
+import { computed, withDefaults } from "vue";
 
 export type EBadgeColor = "blue" | "orange" | "purple" | "black";
 
@@ -43,7 +43,7 @@ const colorClass = computed(() => `ui-badge--${props.color}`);
   &--black {
     background-color: black;
   }
-  
+
   &--purple {
     background-color: #9747ff;
   }
